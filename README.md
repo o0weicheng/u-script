@@ -1,2 +1,2 @@
-# use-script-check
-自用签到脚本
+# u-script
+自用脚本
