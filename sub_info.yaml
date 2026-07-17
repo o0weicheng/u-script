@@ -1,0 +1,16 @@
+name: 机场流量
+description: 机场流量信息，来自 yfamilys
+homepage: https://yfamilys.com
+dns: {}
+compat_arguments:
+  sub_url: ""
+compat_arguments_desc: 机场订阅地址
+scriptings:
+- generic:
+    name: Sub_info
+    script_url: https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js
+    env:
+      _compat.$argument: url={{{sub_url}}}&reset_day=1&title=Subscription&icon=icloud.circle.fill&color=#0D918D
+panels:
+- name: Sub_info
+  script_name: Sub_info
